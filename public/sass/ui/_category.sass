@@ -1,0 +1,525 @@
+*
+    font-family: 'Muli', sans-serif
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-thumb 
+  background: rgba(0,0,0,0.2)
+  border-radius: 10px
+    
+
+.container-fluid-2200
+    padding-left: 50px
+    padding-right: 50px
+    margin-left: auto
+    margin-right: auto
+    max-width: 2300px
+    
+//list header
+
+.goodsli-header
+    margin-top: 15px
+    margin-bottom: 15px
+    line-height: 40px
+    .list-hd-bg
+        padding: 18px 24px
+        margin-bottom: 12px
+        background: linear-gradient(90deg,#f7f7f7 0,#e7e3e4 100%)
+        .header-title
+            font-size: 24px
+            font-weight: 500
+            color: #000000
+            margin-right: 10px
+            display: inline
+        .header-sum
+            font-size: 16px
+            color: rgba(0,0,0,.4)
+            display: inline-block
+
+.sort-select-out
+    line-height: 40px
+    z-index: 40
+    text-align: right 
+    span
+        margin-right: 10px
+        display: inline
+    .sort-select
+        text-align: left
+        display: inline-block
+        width: 200px
+
+.dropdown-category-toggle
+    position: relative
+    height: 30px
+    line-height: 30px
+    border: 1px solid #ccc
+    width: 100%
+    background: #fff
+    padding: 0 10px
+    font-size: 12px
+    .icon-toggle-down
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        color: #AEAEAE
+        right: 0px
+
+.c-dropdown
+    position: relative
+    .dropdown-menu
+        z-index: 40
+        position: absolute
+        top: 30px
+        left: 0
+        width: 100%
+        border: 1px solid #ccc
+        border-top: 0
+        color: #999999
+        background: #fff
+        max-height: 300px
+        overflow-y: scroll
+        margin-top: 0 
+        border-radius: 0
+        font-size: 12px
+        display: none
+        padding-top: 0
+        li
+            height: 30px
+            line-height: 30px
+            padding: 0 10px
+        li:not(:last-child)
+            border-bottom: 1px solid #fafafa
+
+.sort-select
+    &:hover .dropdown-menu
+        display: block
+        border-top: 0
+    &:hover .dropdown-category-toggle
+        border-bottom: 0   
+    &:hover .icon-toggle-down
+        i
+            transform: rotate(180deg)
+            -moz-transform: rotate(180deg)
+            -webkit-transform: rotate(180deg)
+            -o-transform: rotate(180deg)
+            -ms-transform: rotate(180deg)
+
+// grid-list-item
+
+    
+.sidebar-cate-in
+    background: #fff
+
+.col-2200
+    width: 100%
+    margin-top: 140px
+
+.col-left-220
+    max-width: 220px
+    width: 15%
+
+
+.col-right-1975
+    width: 100%
+    margin-left: 220px
+    
+.grid-category
+    display: grid
+    width: 100%
+    grid-gap: 60px 30px
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(4, auto)
+
+.item--wrap
+    width: 100%
+    height: 100%
+    &--img
+        width: 100%
+        height: 70%
+        position: relative
+        
+
+.item--wrap--tit
+    position: relative
+    width: 100%
+    height: 5%
+    color: #999999
+    font-size: 12px
+
+
+.item--wrap--switchColor
+    height: 5%    
+    .setColor
+        display: inline-block
+        width: 100%
+        .color-pink
+            width: 20px
+            height: 20px
+            background: #ebc5b0
+            display: inline-block
+            &:hover
+                border: 1px solid #000000
+        .color-green    
+            width: 20px
+            height: 20px
+            background: green
+            display: inline-block
+            &:hover
+                border: 1px solid #000000
+    
+                
+
+.price-like
+    height: 5%
+    .item--wrap--like
+        float: right
+        &:hover
+            color: #cc0000
+    .item--wrap--price1
+        font-weight: 700
+        font-size: 14px
+        text-decoration: none
+        color: red
+    .item--wrap--price2
+        font-size: 12px
+        text-decoration: line-through
+        
+.item--wrap--img
+    display: none   
+    &:first-child
+        display: initial
+
+.item--wrap--tit
+    display: none
+    &:first-child
+        display: initial
+
+// pagination
+.list-page     
+     text-align: right
+     margin-bottom: 20px 
+     padding-top: 40px
+     .c-pagination
+         display: inline-block
+         font-size: 12px
+         li:first-child
+            font-weight: 700
+            color: #222
+            text-decoration: underline
+         li
+             display: inline-block
+             padding: 4px 10px
+
+// side bar fixed
+.filter-top-line
+    border-top: 1px solid rgba(0,0,0,.05)
+
+.sidebar-cate
+    &-in 
+        z-index: 1
+        margin-top: 15px
+        position: fixed
+        height: 80%
+        overflow-y: scroll
+        width: 200px
+
+.list-classify-filter 
+  overflow: hidden
+  
+.list-content-category 
+  transition: max-height 200ms ease-out
+
+.list-title-category 
+  padding: 15px 0
+  font-size: 14px
+  font-weight: 550
+  position: relative
+  font-size: 14px
+  color: #222
+  &-second
+      padding: 6px 0 6px 10px
+      font-size: 12px
+      color: #666
+  &-third
+      font-size: 12px
+      padding: 6px 0 6px 20px
+      color: rgba(0,0,0,0.6)
+  &-four
+      font-size: 12px
+      padding: 6px 0 6px 30px
+      color: rgba(0,0,0,0.6)
+  &-five
+      padding: 3px 0 3px 40px
+      font-size: 12px
+      color: rgba(0,0,0,0.6)
+      
+
+.add-dele:after
+    content: "+"
+    position: absolute
+    left: 180px
+    top: 0
+    bottom: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    
+
+.list-classify-filter > .list-content-category 
+  max-height: 0px
+
+
+.list-classify-filter.active > .list-content-category 
+  max-height: initial
+
+
+// .list-classify-filter .list-content-category > .list-classify-filter 
+//   margin-left: 10px
+
+.list-classify-filter
+    .list-title-box
+        position: relative
+        font-size: 12px
+        padding-top: 10px
+
+.css-input
+    position: relative
+    padding-left: 25px
+    display: block
+    margin: 0
+    cursor: pointer
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+    .checkmark
+        width: 14px
+        height: 14px
+        position: absolute
+        top: 45%
+        transform: translateY(-50%)
+        left: 0
+        background: #fff   
+        border: 1px solid rgba(0,0,0,.2)
+        &:after
+            content: ""
+            position: absolute
+            display: none
+    &:hover input + .checkmark
+        background: #ccc
+    & input:checked + .checkmark
+        backgroud: #fff
+    & input:checked + .checkmark:after
+        display: block
+    & .checkmark:after
+        left: 4px
+        top: 0px
+        width: 5px
+        height: 9px
+        border: solid #000
+        border-width: 0 2px 2px 0
+        -webkit-transform: rotate(45deg)
+        -ms-transform: rotate(45deg)
+        transform: rotate(45deg)
+
+.changed:after
+    content: '-'
+    position: absolute
+    top: 0
+    bottom: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    left: 180px
+    font-size: 16px
+
+.fliter-price
+    font-size: 14px
+    color: #222222
+    display: block
+    margin-top: 15px
+    &-input
+        input
+            display: inline
+            width: 45%
+            padding: 0
+            margin: 0
+            text-align: center
+    button
+        width: 100%
+        background: #000000
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700px
+        margin-top: 10px
+        padding: 5px
+
+.nav-mobile
+    width: 100%
+    display: none
+    &-left
+        display: inline-block
+        float: left
+    &-mid
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        img
+            width: 100px
+    &-right
+        display: inline-block
+        float: right
+        .mobile-cart,.mobile-search
+            display: inline-block
+            padding-right: 10px
+
+.sidebar-mobile
+        width: 0
+
+.nav-mobile-menu
+    background: #f6f6f6
+    position: absolute
+    top: 0
+    left: -3000px
+    width: 80%
+    z-index: 12
+    height: 100%
+    .title-menu
+        padding: 17px
+        background: #fff
+        .btn-close-nav
+            float: right
+        span
+            font-weight: 600
+            margin-left: 80px
+    .img-daily
+        padding: 10px
+        img
+            width: 100%
+    .list-daily
+        margin: 10px
+        background: #fff
+        border-radius: 5px
+        li
+            width: 28%
+            text-align: center
+            margin: 5px 5px
+            display: inline-block
+            img
+                width: 100%
+            span
+                font-size: 12px
+        p
+            font-size: 12px
+            font-weight: 600
+            margin: 0
+            padding-left: 10px
+            text-transform: uppercase
+            color: #777
+    
+        
+
+
+@media only screen and (min-width: 1800px) and (max-width: 2200px)
+    .container-fluid-1800 
+        min-width: 1800px
+        padding: 0 50px
+        margin: 0 auto
+    
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+    .grid-category
+        grid-gap: 50px 25px
+        grid-template-columns: repeat(4, 1fr)
+
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    .grid-category
+        grid-gap: 50px 25px
+        grid-template-columns: repeat(3, 1fr)
+
+    .navbar-fix
+        z-index: 10
+
+@media only screen and (min-width: 600px) and (max-width: 768px)
+    .grid-category
+        grid-gap: 50px 20px
+        grid-template-columns: repeat(2, 1fr)
+
+@media only screen and (min-width: 600px) and (max-width: 768px)
+    .grid-category
+        grid-gap: 50px 25px
+        grid-template-columns: repeat(1, 1fr)
+
+    .navbar-fix
+        z-index: 10
+
+
+@media only screen and (max-width: 600px)
+    .nav-mobile
+        display: inline-block
+    
+    .grid-category
+        grid-gap: 50px 20px
+        grid-template-columns: repeat(2, 1fr)
+
+    .sidebar-cate-in
+        width: 0
+    
+    .col-right-1975 
+        margin-left: 0
+
+    .sort-select-out
+        display: none
+
+    .goodsli-header .list-hd-bg
+        padding: 0
+        margin: 0
+
+    .goodsli-header 
+        .list-hd-bg 
+            .header-title
+                font-size: 16px
+                color: #333333
+            .header-sum
+                font-size: 12px
+
+    .col-2200
+        display: none
+
+    .navbar-fix
+        border-bottom: 1px solid #ccc
+        height: 66px
+
+    #height-content
+        margin-top: 60px
+
+    .navbar-nav
+        display: none
+
+
+    
+
+
+
+
+
+        
+    
+
+
+
+
+
+
+
+        
+
+
+
+
+    
+             

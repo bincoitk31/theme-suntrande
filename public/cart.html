@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.20/jquery.zoom.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Cart</title>
+</head>
+<body>
+    <header style="border-bottom: 1px solid #e5e5e5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="che-left">
+                        <div class="logo-cart">
+                            <a href="#">
+                                <img src="img/Logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="che-secure">
+                            <span><i class="fas fa-lock"></i></span>
+                            <em>THANH TOÁN AN TOÀN</em>
+                        </div>
+                    </div> 
+                    <div class="che-right">
+                        <a href="#">
+                            TIẾP TỤC MUA SẮM 
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- check cart -->
+    <section>
+        <div class="container">
+            <div class="row">
+                    <div class="col-xl-12">
+                            <div class="c-process-status">
+                                <span class="active">Giỏ hàng</span>
+                                <span>Đặt hàng</span>
+                                <span>Trả tiền</span>
+                                <span>Hoàn thành đơn hàng</span>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+<a href=""></a>
+<!-- Cart-list -->
+    <section>
+        <div class="container">
+            <div class="row cart-list">
+                <div class="col-xs-12 check-left col-md-8">
+                    <div class="j-full-gifts">
+                        <div class="c-full-gift">
+                            <div class="c-full-shop">
+                                <div class="tips">
+                                        <i class="fas fa-gift"></i>
+                                        <span class="gift-title">Tặng Quà</span>
+                                        <span class="gift-limit">Mua thêm 411.00đ để nhận được một món quà Miễn Phí</span>
+                                        <div class="show-gifts" id="show-gifts">
+                                            <span><i class="fas fa-chevron-up"></i></span>
+                                        </div>
+                                </div>
+                                <div class="full-gift-content active">
+                                    <div id="gift-hidden"> 
+                                        <div class="full-gift-title">
+                                                <span class="tab-active">
+                                                    đơn hàng trên 666.000đ
+                                                </span>
+                                            </div>
+                                            <div class="container pt-2 pb-4">
+                                                    <div class="col-md-12" style="position: relative">
+                                                        <span class="slick-arrow-left" id="button-slider-left-cart">
+                                                        <i class="fas fa-chevron-left fa-2x" style="color: #474747"></i>
+                                                        </span>
+                                                        <span class="slick-arrow-right" id="button-slider-right-cart">
+                                                        <i class="fas fa-chevron-right fa-2x " style="color: #474747"></i>
+                                                        </span>
+                                                        <div class="slider cart-slick">
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2018/06/21/15295726111437470387_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                    Hoa tai Vàng
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                        0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2019/03/15/15526375903136794201_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Faux Pearl Trang trí kẹp tóc 3pack               
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                                0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2018/10/18/1539851477526493325_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Mũ bóng chày Cactus thêu
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                                0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2018/09/17/15371720181898985341_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Đèn Màu vàng
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                                0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2018/11/05/15414024653953075423_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Phụ kiện Tóc Màu vàng
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                        0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2018/11/19/15426147613026948731_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Ốp lưng in Calico
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                        0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="imgSlider">
+                                                            <div class="imgSlider--f1">
+                                                            <a href="#"><img
+                                                                src="//img.ltwebstatic.com/images2_pi/2019/03/11/15522890023155674793_thumbnail_405x552.jpg" alt=""
+                                                                class="imgSlider--f1--f2">
+                                                                <div class="title-slider-cart">
+                                                                        Hoa tai Vàng
+                                                                </div>
+                                                                <div class="pt-3">
+                                                                    <div class="price-slider-cart">
+                                                                        0đ
+                                                                    </div>
+                                                                    <div class="add-slider-cart">
+                                                                        <i class="fas fa-shopping-bag"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-cart pt-4">
+                            <div class="check-title ">
+                                    <h4>Giỏ Hàng</h4>
+                                    <span>Giá có thể thay đổi dựa trên giá có hiệu lực vào ngày bạn thanh toán.</span>
+                            </div>
+                            <div class="j-shopping-body">
+                                    <div class="j-vue-bag c-vue-bag">
+                                        <div class="goods-cart container">
+                                            <div class="row goods-title">
+                                                <div class="col-sm-5 "><span>Sản Phẩm</span></div>
+                                                <div class="col-sm-2 "><span>Giá</span></div>
+                                                <div class="col-sm-3 "><span>Số Lượng</span></div>
+                                                <div class="col-sm-2 "><span>Tổng Cộng</span></div>
+                                            </div>
+                                            <div class="row setborder">
+                                                <div class="col-sm-5">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 setpx">
+                                                           <div class="gd-img">
+                                                                <img src="//img.ltwebstatic.com/images2_pi/2019/04/15/1555315077924847189_thumbnail_405x552.jpg" alt="">
+                                                           </div>
+                                                        </div>
+                                                        <div class="col-sm-7 setpr">
+                                                            <div class="gd-des">
+                                                                <div class="gd-title">
+                                                                  <a href="#">
+                                                                    Áo sơ mi trắng casual
+                                                                  </a>
+                                                                </div>
+                                                                <div class="gd-size">
+                                                                  <span>Kích Thước : <em>M</em></span>
+                                                                </div>
+                                                                <div class="gd-color">
+                                                                  <span>Màu:</span>
+                                                                  <div class="c-opt">
+                                                                    <div class="opt-color">
+                                                                      <a href="#">
+                                                                        <img src="//img.ltwebstatic.com/images2_pi/2019/04/15/1555315074733830316.jpg" alt="">
+                                                                      </a>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="gd-operate">
+                                                                    <a href="#">Chỉnh sửa</a>
+                                                                    <a href="#">Thêm sản phẩm vào yêu thích</a>
+                                                                    <a href="#">Xóa</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 ">
+                                                    <div class="gd-price">
+                                                        <span class="goods-price">255.000₫</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 ">
+                                                    <div class="gd-num">
+                                                        <div class="c-opt-qty">
+                                                            <div class="number-input" id="item-id">
+                                                              <button class="minus"></button>
+                                                              <input class="quantity item-id" min="0" name="quantity" value="1" type="number" step="1">
+                                                              <button class="plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 ">
+                                                    <div class="gd-total">
+                                                        <span id="total-cart">255.000₫</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="cart-mobile">
+                                <div class="container">
+                                    <div class="row">
+                                        <div style="width: 100%; display: flex">
+                                            <div class="col-40">
+                                                <div class="img-mobile">
+                                                    <a href="#">
+                                                        <img src="//img.ltwebstatic.com/images2_pi/2019/04/15/1555315077924847189_thumbnail_405x552.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-60">
+                                                <div class="detail-mobile">
+                                                    <div class="gd-price">
+                                                        <span class="goods-price">255.000₫</span>
+                                                    </div>
+                                                    <div class="gd-title">
+                                                        <a href="#">
+                                                          Áo sơ mi trắng casual
+                                                        </a>
+                                                    </div>
+                                                    <div class="gd-size">
+                                                        <span>Kích Thước : <em>M</em></span>
+                                                    </div>
+                                                    <div class="gd-num">
+                                                        <div class="c-opt-qty">
+                                                            <div class="number-input" id="item-id">
+                                                              <button class="minus"></button>
+                                                              <input class="quantity item-id" min="0" name="quantity" value="1" type="number" step="1">
+                                                              <button class="plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="opt-icon">
+                                                        <span><i class="far fa-heart"></i></span>
+                                                        <span><i class="far fa-edit"></i></span>
+                                                        <span><i class="far fa-trash-alt"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 check-right" style="border-left: 1px solid #ccc"> 
+                    <div class="pc-total">
+                        <div class="check-title ">
+                            <h4>Tổng cộng </h4>
+                        </div>
+                        <div class="c-order-summary">
+                            <div class="total-cart">
+                                <span id = "total-all-cart">255.000₫</span>
+                            </div>
+                            <div class="check-btn">
+                                <button>THANH TOÁN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-total">
+                        <div class="c-order-summary">
+                            <div class="total-cart">
+                                <span>Tổng cộng</span>
+                                <span id = "total-all-cart">255.000₫</span>
+                            </div>
+                            <div class="check-btn">
+                                <button>THANH TOÁN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accept-bank">
+                        <p>Chúng Tôi Chấp Nhận:</p>
+                        <div class="bank-img">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732253085529991.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282735813528628258.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732803587566708.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732983375743706.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/1528273036537082707.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/1528273241354964734.png" alt="">
+                            <img src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282733431754785346.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+  <footer class="container-fluid py-5 mt-5 fix-footer" style="background: #fafafa;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ft-left">
+              <div class="row">
+                <div class="col-sm-3 ft-left-list">
+                  <h6>thông tin công ty</h6>
+                  <ul>
+                    <li><a href="#">Giới thiệu SUNTRADE</a></li>
+                    <li><a href="#">Chương trình Affiliate</a></li>
+                    <li><a href="#">Blogger Thời Trang</a></li>
+                    <li><a href="#">Chiết khấu cho sinh viên</a></li>
+                    <li><a href="#">Tuyển dụng nhà thiết kế</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 ft-left-list">
+                  <h6>hỗ trợ khách hàng</h6>
+                  <ul>
+                    <li><a href="#">Thông tin vận chuyển</a></li>
+                    <li><a href="#">Trả lại</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="#">Làm thế nào để theo dõi</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 ft-left-list">
+                  <h6>dịch vụ khách hàng</h6>
+                  <ul>
+                    <li><a href="">Liên hệ chúng tôi</a></li>
+                    <li><a href="">Phương thức thanh toán</a></li>
+                    <li><a href="">Điểm thưởng</a></li>
+                    <li><a href="">Trung Tâm Dùng Thử miễn phí</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 ft-right">
+              <div class="row">
+                <div class="col-sm-8 ft-right-list">
+                  <h6>KÊT NỐI VỚI CHÚNG TÔI</h6>
+                  <ul class="ft-right-et">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 ft-right-list">
+                  <h6>APP</h6>
+                  <ul class="ft-right-et">
+                    <li>
+                      <a href="#" style="font-size: 35px;">
+                        <i class="fab fa-android"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" style="font-size: 35px;"><i class="fab fa-apple"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ft-right-email">
+                <h6>ĐĂNG KÝ NHẬN TIN TỪ SUNTRADE</h6>
+              </div>
+              <form action="/">
+                <div class="ft-right-input">
+                  <div class="content-input">
+                    <input type="email" id="txt-email" placeholder="Địa chỉ email của bạn" class="footer-subscribe">
+                  </div>
+                  <div class="ft-right-btn" >
+                    <button class="button-submit" id="btn-validate"> Đăng Ký</button>
+                  </div>
+                </div></form>
+            </div>
+    
+          </div>
+          <div class="row">
+            <div class="ft-bottom col-sm-8">
+              <p>@2009-2019 SUNTRADE bảo lưu tất cả các quyền</p>
+              <ul class="ft-bottom-add">
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản và Điều kiện</a></li>
+                <li><a href="#">Thông báo về Bản quyền</a></li>
+              </ul>
+            </div>
+            <div class="ft-bottom-icon col-sm-4">
+              <div class="float-right">
+                <a href="#"><img src="//sheinsz.ltwebstatic.com/she_dist/images/seal-43f93aaef6.png" alt=""></a>
+                <a href="#"><img src="//sheinsz.ltwebstatic.com/she_dist/images/DMCA-53fc2e1a50.png" alt=""></a>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </footer>
+      <!-- End -->
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

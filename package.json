@@ -1,0 +1,24 @@
+{
+  "name": "vintage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "build::watch": "node-sass -w public/sass/ -o public/dist/",
+    "dev": "nodemon server.js",
+    "build": "node-sass public/sass/main.sass public/dist/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "experss": "0.0.1-security",
+    "express": "^4.16.2",
+    "jquery": "^3.4.1",
+    "lite-server": "^2.5.3",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}

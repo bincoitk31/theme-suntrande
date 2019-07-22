@@ -1,0 +1,197 @@
+.log-in,.signup
+    width: 50%
+    margin: 0 auto
+    h4
+        text-align: center
+        margin-bottom: 20px
+        text-transform: capitalize
+        font-size: 18px
+        font-weight: bold
+    .c-input
+        position: relative
+        padding: 10px 0
+        .input-title
+            color: #222
+            font-size: 12px
+        input   
+            width: 100%
+            height: 36px
+            padding: 0 12px
+            border: 1px solid #ccc
+            outline: 0
+            border-radius: 0 
+
+.log-in-btn-wrapper
+    .btn-login
+        width: 100%
+        padding: 10px
+        color: #ffffff
+        background: #000
+        text-align: center
+        font-size: 16px
+        font-weight: bold
+        margin-top: 20px
+        cursor: pointer
+
+.forgot-psd
+    font-size: 12px
+    color: #999
+    text-decoration: underline
+    margin-top: 10px
+    text-align: center
+
+.login-divide
+    text-align: center
+    font-size: 12px
+    color: #222
+    position: relative
+    margin-top: 20px
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        background: #e5e5e5
+        width: 45%
+        height: 1px
+        top: 50%
+    &:before
+        content: ''
+        position: absolute
+        background: #e5e5e5
+        width: 45%
+        height: 1px
+        top: 50%
+        right: 0
+
+.btn-login-fb
+    background: #496cb3
+    text-transform: capitalize
+    padding: 10px
+    color: #ffffff
+    font-weight: 700
+    text-align: center
+    font-size: 16px
+    cursor: pointer
+    width: 100%
+    margin-top: 20px
+
+.login-discountinfo
+    color: #222222
+    text-align: center
+    font-size: 14px 
+    margin-top: 20px
+    span
+        color: #d53333
+        font-weight: bold
+
+.plus-info
+    margin-top: 10px
+    .prefer-item
+        display: inline-block
+        min-width: 45%
+        margin-bottom: 10px
+        font-size: 12px
+        .checkbox-login
+            position: relative
+            display: inline-block
+            width: 16px
+            height: 16px
+            margin-right: 10px
+            background: #fff
+            border: 1px solid #ccc
+            cursor: pointer
+            vertical-align: top
+            input[type=checkbox]
+                display: none
+            i
+                display: none
+                width: 10px
+                height: 6.5px
+                position: absolute
+                border-left: 2px solid #222
+                border-bottom: 2px solid #222
+                -webkit-transform: rotate(-45deg)
+                -ms-transform: rotate(-45deg)
+                transform: rotate(-45deg)
+                top: 50%
+                left: 50%
+                margin-top: -5px
+                margin-left: -5px
+            input:checked ~ i
+                display: block
+
+.btn-signup
+    width: 100%
+    padding: 10px
+    color: #ffffff
+    background: #000
+    text-align: center
+    font-size: 16px
+    font-weight: bold
+    margin-top: 15px
+    cursor: pointer
+
+.reg-why
+    font-size: 12px
+    color: #222222
+    text-align: center
+    margin-top: 10px
+    a
+        text-decoration: none
+        color: #333
+    em
+        color: #d53333
+    em+em
+        font-weight: bold
+        font-style: normal
+
+.fixbottom
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+
+.j-login-con
+    border-right: 1px solid #e5e5e5
+
+.sign-mobile
+    display: none
+
+.login-normal
+    margin-top: 120px
+
+@media only screen and (max-width: 600px)
+    .login-normal
+        display: none
+    .col-xs-12
+        min-width: 375px 
+        padding: 0 20px
+        margin: 0 auto
+    .j-login-con
+        border-right: none
+    .signin-title
+        margin: 20px auto
+    .signup-title
+        margin: 20px auto
+    .log-in, .signup
+        width: 100%
+    .sign-mobile
+        display: block
+    
+@media only screen and (min-width: 600px) and (max-width: 768px)
+    .log-in, .signup
+        width: 80%
+    .plus-info .prefer-item 
+        display: block
+
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    .plus-info .prefer-item 
+        display: block
+    .log-in, .signup
+        width: 80%
+
+
+    
+
+    
+    

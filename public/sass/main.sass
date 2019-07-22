@@ -1,0 +1,71 @@
+@import "modules/all"
+@import "partials/all"
+@import "ui/all"
+
+html
+  font-size: 16px
+
+body
+  margin: 0
+  padding: 0
+  position: relative
+  font-family: 'Kodchasan', sans-serif
+  vertical-align: baseline
+  background-color: #fff
+  line-height: 1.6
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+li
+  list-style: none
+ul
+  margin: 0
+  padding: 0
+
+button
+  &:focus
+    outline: none
+
+strong
+  color: initial
+
+a
+  color: $color-text
+  text-decoration: none
+  &:hover
+    color: #7eb934
+
+.link-primary
+  color: $color-link
+
+.wrapper
+  max-width: $max-width
+  display: flex
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+
+
+input
+  border: $border-thick-default
+
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+  &:focus
+    outline: none
+
+.svg-icon
+  width: 2em 
+  height: 2em
+
+.svg-icon path, .svg-icon polygon, .svg-icon rect
+  fill: #636c75
+
+.svg-icon circle
+  stroke: #636c75
+  stroke-width: 1
